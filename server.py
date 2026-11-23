@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serve the hello toto page on the local network at port 8080."""
+"""Serve the hello toto page on the local network at port 8081."""
 
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import socket
