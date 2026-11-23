@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Serve the hello zuzu page on the local network at port 8080."""
+"""Serve the hello toto page on the local network at port 8080."""
 
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import socket
 
 HOST = "0.0.0.0"
-PORT = 8080
+PORT = 8081
 
 HTML = """<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hello zuzu</title>
+  <title>hello toto</title>
   <style>
     html, body { width: 100%; min-height: 100%; margin: 0; }
     body {
@@ -26,7 +26,7 @@ HTML = """<!doctype html>
     }
   </style>
 </head>
-<body>hello zuzu</body>
+<body>hello toto</body>
 </html>
 """
 
@@ -65,7 +65,7 @@ def main():
     lan_ip = get_lan_ip()
     print(f"Local: http://localhost:{PORT}", flush=True)
     print(f"LAN:   http://{lan_ip}:{PORT} (ouvrez cette adresse depuis un appareil du même réseau)", flush=True)
-    print("Si nécessaire, autorisez les connexions entrantes sur le port 8080 dans le pare-feu.", flush=True)
+    print(f"Si nécessaire, autorisez les connexions entrantes sur le port {PORT} dans le pare-feu.", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

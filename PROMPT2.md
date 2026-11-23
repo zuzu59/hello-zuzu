@@ -5,7 +5,7 @@
 ## Exigences
 
 - Le serveur sert une page HTML complète avec le CSS intégré, sans fichier ni ressource externe.
-- La page affiche uniquement le texte visible `hello zuzu`, centré horizontalement et verticalement dans la fenêtre. Utilise Flexbox ou CSS Grid et adapte la mise en page à la taille de l’écran.
+- La page affiche uniquement le texte visible `hello toto`, centré horizontalement et verticalement dans la fenêtre. Utilise Flexbox ou CSS Grid et adapte la mise en page à la taille de l’écran.
 - Le serveur écoute sur toutes les interfaces réseau (`0.0.0.0`) afin d’être accessible depuis les autres appareils du réseau local, sur le port `8080`.
 - Au démarrage, affiche clairement `http://localhost:8080` pour l’accès depuis cet ordinateur ainsi que l’adresse LAN de cet ordinateur au format `http://<adresse-IP-LAN>:8080`, déterminée avec la bibliothèque standard.
 - Indique brièvement que l’adresse LAN est à ouvrir depuis un appareil connecté au même réseau et que le pare-feu peut devoir autoriser les connexions entrantes sur le port `8080`.
